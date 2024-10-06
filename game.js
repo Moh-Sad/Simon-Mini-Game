@@ -16,6 +16,7 @@ $(document).keypress( function(event) {
     if (gameStarted == false) {
       nextSequence();
       gameStarted = true;
+      $("h2").text("");
     }
   });
 
