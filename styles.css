@@ -10,6 +10,13 @@ body {
   color: #FEF2BF;
 }
 
+#level-score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
 .container {
   display: block;
   width: 50%;
@@ -50,4 +57,10 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+#start {
+  background-color: grey;
+  font-size: 30px;
+  border-radius: 50px;
 }
