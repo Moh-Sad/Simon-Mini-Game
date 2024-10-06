@@ -64,7 +64,7 @@ function checkAnswer(currentLevel) {
     console.log("Sucsess");
   }
   else {
-    $("h1").text("Game Over, Press Any Key or start to Restart");
+    $("h1").text("Game Over, Press any Key or start to Restart");
     $("h2").text("(Your score: Level " + levelNumber +")");
     $("body").addClass("game-over");
     setTimeout(function() {
