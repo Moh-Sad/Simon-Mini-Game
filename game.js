@@ -4,7 +4,15 @@ var userClickedPattern = [];
 var levelNumber = 0;
 var gameStarted = false;
 
-  $(document).keypress( function(event) {
+$("#start").click( function(event) {
+    if (gameStarted == false) {
+      nextSequence();
+      gameStarted = true;
+      $("h2").text("");
+    }
+  });
+
+$(document).keypress( function(event) {
     if (gameStarted == false) {
       nextSequence();
       gameStarted = true;
@@ -56,6 +64,7 @@ function checkAnswer(currentLevel) {
   }
   else {
     $("h1").text("Game Over, Press Any Key to Restart");
+    $("h2").text("(Your score: Level " + levelNumber +")");
     $("body").addClass("game-over");
     setTimeout(function() {
       $("body").removeClass("game-over");
